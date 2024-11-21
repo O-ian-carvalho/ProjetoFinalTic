@@ -1,27 +1,114 @@
-# ProjetoFinal
+### **README.md**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+```markdown
+# Projeto Final
 
-## Development server
+Este é o repositório do **Projeto Final**, uma aplicação desenvolvida em Angular com um servidor backend falso utilizando o **JSON Server**.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## **Pré-requisitos**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Antes de começar, você precisará ter as seguintes ferramentas instaladas em sua máquina:
 
-## Build
+- [Node.js](https://nodejs.org/) (versão 14 ou superior)
+- [npm](https://www.npmjs.com/) (vem junto com o Node.js)
+- Git
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## **Como Clonar o Repositório**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Abra o terminal e navegue até o diretório onde deseja clonar o repositório.
+2. Execute o seguinte comando para clonar o projeto:
 
-## Running end-to-end tests
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Entre no diretório do projeto:
 
-## Further help
+   ```bash
+   cd <NOME_DO_DIRETORIO_DO_PROJETO>
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## **Como Instalar as Dependências**
+
+1. Certifique-se de que está no diretório raiz do projeto.
+2. Execute o comando abaixo para instalar todas as dependências do projeto:
+
+   ```bash
+   npm install
+   ```
+
+---
+
+## **Como Rodar o Projeto**
+
+O projeto utiliza dois servidores:
+- O frontend Angular.
+- O backend falso utilizando JSON Server.
+
+### **Rodar os Servidores Simultaneamente**
+1. Execute o seguinte comando para iniciar ambos os servidores:
+
+   ```bash
+   npm start
+   ```
+
+2. Acesse os servidores nos seguintes endereços:
+   - **Frontend Angular:** `http://localhost:4200`
+   - **Backend JSON Server:** `http://localhost:3000`
+
+### **Rodar Servidores Separadamente**
+Se desejar rodar os servidores separadamente, siga estas etapas:
+
+#### **1. Rodar o Backend**
+Execute o comando abaixo para iniciar o JSON Server:
+```bash
+npm run backend
+```
+O servidor estará disponível em `http://localhost:3000`.
+
+#### **2. Rodar o Frontend**
+Execute o comando abaixo para iniciar o servidor Angular:
+```bash
+ng serve
+```
+O servidor estará disponível em `http://localhost:4200`.
+
+---
+
+## **Estrutura do Projeto**
+
+```plaintext
+.
+├── src/                # Código-fonte do frontend Angular
+├── db/                 # Arquivo JSON com os dados do backend falso
+│   └── db.json         # Banco de dados para o JSON Server
+├── package.json        # Configuração de scripts e dependências do projeto
+├── angular.json        # Configuração do Angular
+├── README.md           # Este arquivo
+└── ...                 # Outros arquivos do projeto
+```
+
+---
+
+## **Dados do Backend (JSON Server)**
+
+O JSON Server utiliza o arquivo `db/db.json` como banco de dados falso. Aqui estão alguns exemplos de endpoints disponíveis:
+
+- **Lista de hambúrgueres:** `http://localhost:3000/hamburgers`
+- **Lista de categorias:** `http://localhost:3000/categorias`
+
+---
+
+
+## **Tecnologias Utilizadas**
+
+- **Angular 18**: Framework para desenvolvimento frontend.
+- **JSON Server**: Servidor backend falso para simulação de APIs.
+- **Node.js**: Ambiente de execução JavaScript.
+- **npm**: Gerenciador de pacotes.

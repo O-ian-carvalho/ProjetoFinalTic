@@ -1,0 +1,15 @@
+<div id="cardapio">
+    <h2>{{titulo}}</h2>
+
+    <div id="listagem" >
+
+        @if(rounteId == 0){
+            <app-hamburguer-card *ngFor="let categoria of displayArrayList" [name]="categoria.nome" [id]="categoria.id" [description]="categoria.descricao" routerLink="/cardapio/{{categoria.id}}" ></app-hamburguer-card>
+        } @else{
+            <app-hamburguer-card *ngFor="let hamburguer of displayArrayList" [name]="hamburguer.titulo" [id]="hamburguer.id" [description]="hamburguer.ingredientes" routerLink="/detalhes/{{hamburguer.id}}" ></app-hamburguer-card>
+        }
+        
+    </div>
+    
+    <app-botao *ngIf="mostrarBotao" (click)="cardapioCompleto()" [texto]="'Ver cardápio completo'"></app-botao>
+</div>

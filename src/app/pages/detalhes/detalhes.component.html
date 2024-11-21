@@ -1,0 +1,19 @@
+<div id="detalhes">
+    <h2>Detalhes</h2>
+
+    <div id="middle">
+        <div id="burger">
+            <img src="assets/hamburguer.png" alt="hamburguer">
+            <h3>{{hamburguer.titulo}}</h3>
+            <p>{{hamburguer.ingredientes}}</p>
+            <h4 id="preco">{{hamburguer.preco.toFixed(2)}} R$</h4>
+        </div>
+
+        <div id="descricao">
+            <h4>Descrição</h4>
+            <p>{{hamburguer.descricao}}</p>
+        </div>
+    </div>
+
+    <app-botao routerLink="/pedido" [texto]="'Comprar'"></app-botao>
+</div>

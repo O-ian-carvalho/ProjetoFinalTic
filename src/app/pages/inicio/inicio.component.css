@@ -1,0 +1,36 @@
+#iniciopag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#iniciopag img{
+    width: 55%;
+    margin-bottom: 50px;
+}
+#btnPedido{
+    margin-right: 60px;
+}
+
+@media(max-width: 700px){
+    #inicioButtons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    #btnPedido{
+        margin-right: 5px;
+    }
+}
+
+@media(max-width: 450px){
+    
+
+    #btnPedido{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}

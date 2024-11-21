@@ -1,0 +1,81 @@
+#pedido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+#pedido form{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 70px;
+    margin-top: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.767);
+}
+
+#pedido form app-input{
+    margin: 15px 0;
+}
+
+
+
+#finaliar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* texte area */
+#observacoes{
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin-top: 15px;
+}
+#observacoes textarea{
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    border: 1px solid var(--marrom);
+    margin-top: 10px;
+}
+
+#observacoes label{
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+#observacoes label span{
+    color: var(--vermelho);
+}
+
+
+@media(max-width:800px)
+{
+    #pedido form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        
+    }
+
+    #observacoes{
+        width: 80%;
+    }
+    
+}

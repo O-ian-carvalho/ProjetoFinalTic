@@ -1,0 +1,83 @@
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: var(--background-color);
+    position: relative;
+  }
+  
+  #logoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  #menu-toggle {
+    display: none; 
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--marrom);
+  }
+  
+  #listaMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 70%;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  #listaMenu li {
+    font-size: 23px;
+    font-weight: 600;
+    margin: 5px;
+  }
+  
+  #listaMenu li a {
+    text-decoration: none;
+    color: var(--marrom);
+  }
+  
+  #listaMenu li a:hover {
+    cursor: pointer;
+    color: var(--vermelho);
+  }
+  
+  #listaMenu li a.active {
+    color: var(--vermelho);
+  }
+  
+  /* Responsivo: estilo do botão hambúrguer e comportamento do menu */
+  @media (max-width: 940px) {
+    #menu {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #menu-toggle {
+      display: block; /* Mostra o botão hambúrguer */
+    }
+  
+    #listaMenu {
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      overflow: hidden;
+      max-height: 0; /* Colapsado inicialmente */
+    }
+  
+    #listaMenu.show {
+      max-height: 500px; /* Expande o menu quando a classe "show" é adicionada */
+    }
+  
+    #listaMenu li {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+  }
+  

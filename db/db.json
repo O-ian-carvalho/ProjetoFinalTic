@@ -1,0 +1,112 @@
+{
+  "hamburgers": [
+    {
+      "id": 1,
+      "titulo": "Cheeseburger Clássico",
+      "descricao": "Um clássico hambúrguer com carne suculenta e queijo cheddar derretido.",
+      "ingredientes": "Pão brioche, Carne bovina, Queijo cheddar, Alface, Tomate, Molho especial",
+      "preco": 25.90,
+      "categoriaId": 1
+    },
+    {
+      "id": 2,
+      "titulo": "Bacon Lover",
+      "descricao": "Delicioso hambúrguer com bacon crocante e molho barbecue.",
+      "ingredientes": "Pão australiano, Carne bovina, Queijo prato, Bacon crocante, Cebola caramelizada, Molho barbecue",
+      "preco": 29.90,
+      "categoriaId": 1
+    },
+    {
+      "id": 3,
+      "titulo": "Veggie Delight",
+      "descricao": "Uma opção saudável com hambúrguer de grão-de-bico e molho de mostarda e mel.",
+      "ingredientes": "Pão integral, Hambúrguer de grão-de-bico, Alface americana, Tomate, Molho de mostarda e mel",
+      "preco": 22.50,
+      "categoriaId": 3
+    },
+    {
+      "id": 4,
+      "titulo": "Double Cheeseburger",
+      "descricao": "Duas carnes bovinas suculentas e queijo cheddar em um pão brioche.",
+      "ingredientes": "Pão brioche, Duas carnes bovinas, Queijo cheddar, Cebola roxa, Picles, Molho especial",
+      "preco": 35.90,
+      "categoriaId": 1
+    },
+    {
+      "id": 5,
+      "titulo": "BBQ Burger",
+      "descricao": "Hambúrguer defumado com cebola crispy e bacon.",
+      "ingredientes": "Pão australiano, Carne bovina, Queijo prato, Cebola crispy, Bacon, Molho barbecue",
+      "preco": 32.50,
+      "categoriaId": 2
+    },
+    {
+      "id": 6,
+      "titulo": "Smokey Burger",
+      "descricao": "Carne defumada com queijo gouda e cebola caramelizada.",
+      "ingredientes": "Pão australiano, Carne bovina defumada, Queijo gouda, Cebola caramelizada, Bacon, Molho especial",
+      "preco": 34.90,
+      "categoriaId": 2
+    },
+    {
+      "id": 7,
+      "titulo": "Truffle Burger",
+      "descricao": "Hambúrguer gourmet com trufas negras e queijo suíço.",
+      "ingredientes": "Pão brioche, Carne bovina, Queijo suíço, Rúcula, Trufas negras, Maionese de alho",
+      "preco": 39.90,
+      "categoriaId": 2
+    },
+    {
+      "id": 8,
+      "titulo": "Italian Burger",
+      "descricao": "Inspirado na Itália, com queijo parmesão e pesto.",
+      "ingredientes": "Pão ciabatta, Carne bovina, Queijo parmesão, Tomate seco, Rúcula, Pesto",
+      "preco": 36.90,
+      "categoriaId": 2
+    },
+    {
+      "id": 9,
+      "titulo": "Spicy Burger",
+      "descricao": "Hambúrguer picante com jalapeños e molho especial.",
+      "ingredientes": "Pão brioche, Carne bovina, Queijo cheddar, Jalapeños, Molho picante, Alface",
+      "preco": 33.50,
+      "categoriaId": 2
+    },
+    {
+      "id": 10,
+      "titulo": "Chicken Burger",
+      "descricao": "Frango grelhado com maionese especial em pão integral.",
+      "ingredientes": "Pão integral, Frango grelhado, Queijo prato, Tomate, Alface, Maionese",
+      "preco": 28.90,
+      "categoriaId": 4
+    }
+  ],
+
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Clássicos",
+      "descricao": "Hambúrgueres tradicionais e atemporais para todos os gostos."
+    },
+    {
+      "id": 2,
+      "nome": "Especiais",
+      "descricao": "Receitas exclusivas com combinações únicas de sabores."
+    },
+    {
+      "id": 3,
+      "nome": "Vegetarianos",
+      "descricao": "Opções saudáveis e saborosas sem carne."
+    },
+    {
+      "id": 4,
+      "nome": "Frango",
+      "descricao": "Deliciosas opções de hambúrgueres de frango para os amantes de aves."
+    },
+    {
+      "id": 5,
+      "nome": "Gourmet",
+      "descricao": "Hambúrgueres premium com ingredientes selecionados e receitas sofisticadas."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+#input{
+    display: flex;
+    flex-direction: column;
+}
+#input input{
+    width: 386px;
+    height: 47px;
+    padding: 5px;
+    border: 1px solid var(--marrom);
+    margin-top: 10px;
+}
+
+#input label{
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+#input label span{
+    color: var(--vermelho);
+}
