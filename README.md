@@ -95,15 +95,6 @@ O servidor estará disponível em `http://localhost:4200`.
 
 ---
 
-## **Dados do Backend (JSON Server)**
-
-O JSON Server utiliza o arquivo `db/db.json` como banco de dados falso. Aqui estão alguns exemplos de endpoints disponíveis:
-
-- **Lista de hambúrgueres:** `http://localhost:3000/hamburgers`
-- **Lista de categorias:** `http://localhost:3000/categorias`
-
----
-
 
 ## **Tecnologias Utilizadas**
 
