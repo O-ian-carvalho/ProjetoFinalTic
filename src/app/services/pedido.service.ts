@@ -6,12 +6,17 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PedidoService {
+  private orderId = "08dd14b9-4f27-481b-8772-9bcb5362b24f"
   private apiUrl = 'http://localhost:3000/pedidos'; // URL do endpoint para pedidos
 
   constructor(private http: HttpClient) {}
 
-  // Método para criar um novo pedido
-  createPedido(pedido: any): Observable<any> {
-    return this.http.post<any>(this.apiUrl, pedido);
+  getHamburguerByName(name: string | null) : Observable<any>
+  {
+    return this.http.get(`https://localhost:7255/api/Products/name/${name}`);
+  } 
+
+  createPedido( productId : string): Observable<any> {
+    return this.http.get(`https://localhost:7255/api/Orders/${this.orderId}/product/${productId}`);
   }
 }

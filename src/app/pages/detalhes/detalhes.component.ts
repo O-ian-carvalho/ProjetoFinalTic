@@ -13,17 +13,17 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
   styleUrl: './detalhes.component.css'
 })
 export class DetalhesComponent {
-  rounteId: number;
+  rounteId: string | null;
   hamburguer: any = '';
   constructor(private service: HaburguerService, private route: ActivatedRoute)
   {
-    this.rounteId = Number(this.route.snapshot.paramMap.get('id'));
+    this.rounteId = this.route.snapshot.paramMap.get('id');
 
       this.service.getHamburguer(this.rounteId).subscribe({
         next: (data) => {
           
           this.hamburguer = data[0]; // Sucesso
-          this.hamburguer[0].preco = parseFloat(data.hamburguer).toFixed(2);
+          this.hamburguer[0].price = parseFloat(data.hamburguer).toFixed(2);
           console.log(data);
         },
         error: (error) => {

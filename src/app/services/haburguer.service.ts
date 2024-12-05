@@ -10,8 +10,8 @@ export class HaburguerService {
    constructor(private client: HttpClient) {  
   }
 
-  getHamburguer(id: number) : Observable<any>
+  getHamburguer(id: string | null) : Observable<any>
   {
-    return this.client.get(`http://localhost:3000/hamburgers/?id=${id}`);
+    return this.client.get(`https://localhost:7255/api/Products?id=${id}`);
   }
 }

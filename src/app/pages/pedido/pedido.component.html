@@ -1,22 +1,20 @@
 
 <div id="pedido">
     <h2>Pedido</h2>
-    <form >
-            <app-input [name]="'Produto'"></app-input>
-            <app-input [name]="'Quantidade'"></app-input>
-            <app-input [name]="'Produto'"></app-input>
-            <app-input [name]="'Quantidade'"></app-input>
+    <section >
+            <app-input (valueChange)="updateValue($event)" [name]="'Produto'" [desc]="'Digite o nome do produto corretamente!'"></app-input>
+            
         
         <div id="observacoes">
-            <label for="observacoes">Observacoes <span>*</span></label>
-            <textarea name="observacoes" id=""></textarea>
+            <label for="observacoes">Observacoes</label>
+            <textarea name="observacoes" placeholder="Digite uma objservação caso nescessário. " id=""></textarea>
         </div>
 
         <div id="finaliar">
-            <app-botao [texto]="'Finalizar'" ></app-botao>
+            <app-botao (click)="fazerPedido()" [texto]="'Finalizar'" ></app-botao>
         </div>
         
-    </form>
+    </section>
     
    
 

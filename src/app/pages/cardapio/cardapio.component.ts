@@ -16,7 +16,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './cardapio.component.css'
 })
 export class CardapioComponent {
-  rounteId: number;
+  rounteId: string | null;
   mostrarBotao: boolean = true;
   arrayList: any[] = [];
   displayArrayList : any[] = [];
@@ -38,13 +38,14 @@ export class CardapioComponent {
     constructor(private service: CetegoriasService, private route: ActivatedRoute)
     {
 
-      this.rounteId = Number(this.route.snapshot.paramMap.get('id'));
+      this.rounteId = this.route.snapshot.paramMap.get('id');
 
-      if(this.rounteId == 0)
+      if(this.rounteId == null)
       {
         this.service.getCategorias().subscribe({
           next: (data) => {
             this.arrayList = data;
+            console.log(data);
             this.displayArrayList = data.slice(0, 3) // Sucesso
             if(this.displayArrayList.length == this.arrayList.length)
               {
@@ -73,7 +74,7 @@ export class CardapioComponent {
 
         this.service.getCategoria(this.rounteId).subscribe({
           next: (data) => {
-            this.titulo = data[0].nome;
+            this.titulo = data[0].name;
             console.log(data);
           },
           error: (error) => {

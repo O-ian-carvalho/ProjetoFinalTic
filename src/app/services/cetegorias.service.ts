@@ -12,18 +12,18 @@ export class CetegoriasService {
 
   getCategorias() : Observable<any>
   {
-    return this.client.get("http://localhost:3000/categorias");
+    return this.client.get("https://localhost:7255/api/Categories");
   }
 
-  getCategoria(id : number) : Observable<any>
+  getCategoria(id : string) : Observable<any>
   {
-    return this.client.get(`http://localhost:3000/categorias?id=${id}`);
+    return this.client.get(`https://localhost:7255/api/Categories/?Id=${id}`);
   }
 
 
-  getHamburguersPorCategoria(id: number) : Observable<any>
+  getHamburguersPorCategoria(id: string) : Observable<any>
   {
-    return this.client.get(`http://localhost:3000/hamburgers?categoriaId=${id}`);
+    return this.client.get(`https://localhost:7255/api/Categories/${id}/products`);
   }
 
 
