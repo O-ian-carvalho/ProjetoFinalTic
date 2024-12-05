@@ -1,5 +1,5 @@
 ### **README.md**
-
+### ATENÇÃO: O JSON SERVER AINDA ESTÁ NO PROJETO, MAS NÃO ESTÁ SENDO USADO PELA APLICÇÃO ANGULAR 
 ```markdown
 # Projeto Final
 
@@ -49,7 +49,7 @@ Antes de começar, você precisará ter as seguintes ferramentas instaladas em s
 
 O projeto utiliza dois servidores:
 - O frontend Angular.
-- O backend falso utilizando JSON Server.
+- O backend falso utilizando JSON Serve.
 
 ### **Rodar os Servidores Simultaneamente**
 1. Execute o seguinte comando para iniciar ambos os servidores:
@@ -60,7 +60,6 @@ O projeto utiliza dois servidores:
 
 2. Acesse os servidores nos seguintes endereços:
    - **Frontend Angular:** `http://localhost:4200`
-   - **Backend JSON Server:** `http://localhost:3000`
 
 ### **Rodar Servidores Separadamente**
 Se desejar rodar os servidores separadamente, siga estas etapas:
